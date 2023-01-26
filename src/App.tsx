@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './App.css';
 
 
 function App() {
@@ -20,7 +20,7 @@ function Todolist() {
 
     return (
         <div>
-            <h3> What to learn</h3>
+            <h3> What to learn </h3>
             <div>
                 <input/>
                 <button> + </button>
@@ -29,9 +29,11 @@ function Todolist() {
                 <li><input type="checkbox" checked={true} /><span></span>CSS&HTML</li>
                 <li><input type="checkbox" checked={true} /><span></span>JS</li>
                 <li><input type="checkbox" checked={false} /><span></span>React</li>
-
-
             </ul>
+
+            <button>All</button>
+            <button>Active</button>
+            <button>Completed</button>
         </div>
     );
 }
