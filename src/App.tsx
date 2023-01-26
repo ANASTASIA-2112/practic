@@ -3,21 +3,29 @@ import './index.css';
 
 
 function App() {
-    debugger
+
     return (
         <div className="App">
             <Todolist/>
+            <Todolist/>
+            <Todolist/>
+
 
 
         </div>
     );
 }
 
-
 function Todolist() {
-    debugger
+
     return (
-        <div>Todolist</div>
+        <div>
+            <h3> What to learn</h3>
+            <div>
+                <input/>
+                <button> + </button>
+            </div>
+        </div>
     );
 }
 
