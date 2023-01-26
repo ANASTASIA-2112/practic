@@ -25,6 +25,13 @@ function Todolist() {
                 <input/>
                 <button> + </button>
             </div>
+            <ul>
+                <li><input type="checkbox" checked={true} /><span></span>CSS&HTML</li>
+                <li><input type="checkbox" checked={true} /><span></span>JS</li>
+                <li><input type="checkbox" checked={false} /><span></span>React</li>
+
+
+            </ul>
         </div>
     );
 }
