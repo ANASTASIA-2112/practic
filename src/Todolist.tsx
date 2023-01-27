@@ -25,7 +25,10 @@ export function Todolist(props: PropsType) {  //props = { title: "What to learn"
             <ul>
                 {
                     props.tasks.map(t => <li><input type="checkbox" checked={t.isDone}/>
-                        <span>{t.title}</span></li>
+                            <span>{t.title}</span>
+                            <button>x</button>
+
+                        </li>
                     )
                 }
             </ul>
