@@ -5,7 +5,7 @@ import {TaskType, Todolist} from "./Todolist";
 
 function  App () {
 
-    let tasks1 = [
+    const tasks1 = [
         {id : 1, title: "CSS", isDone: true },
         {id : 2, title: "JS", isDone: true },
         {id : 3, title: "React", isDone: false },
@@ -13,7 +13,7 @@ function  App () {
 
     ]
 
-    let tasks2 : Array<TaskType> = [
+    const tasks2 : Array<TaskType> = [
         {id : 1, title: "Hello world", isDone : false },
 
 
