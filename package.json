@@ -1,6 +1,6 @@
 {
-  "name": "todolist-ts",
-  "homepage": "https://anastasia-2112.github.io/todolist-ts",
+  "name": "microtasci",
+  "homepage": "https://anastasia-2112.github.io/microtasci",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
