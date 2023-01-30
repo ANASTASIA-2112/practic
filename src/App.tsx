@@ -2,12 +2,12 @@ import React, {useState} from 'react';
 import './App.css';
 import {Todolist} from "./Todolist";
 
-function useState2(data: any) {
+export function useState2(data: any) {
     return [data, () => {
     }];
 }
 
-let arr = useState2([{}, {}, {}]);
+let arr = useState([{}, {}, {}]);
 
 let tasks = arr[0];
 let setTasks = arr[1];
