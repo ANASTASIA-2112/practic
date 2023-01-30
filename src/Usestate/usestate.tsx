@@ -1,6 +1,6 @@
 import {useState} from "react";
 export function Counter() {
-    console.log("Counter rendered")
+    debugger
     let arr = useState(1);
     let data = arr[0]
     let setData = arr[1]
