@@ -9,7 +9,7 @@ export type TaskType = {
 
 type PropsType = {
     title: string
-    tasks: TaskType[]
+    tasks: Array<TaskType>
     removeTask: Function
 
 }
