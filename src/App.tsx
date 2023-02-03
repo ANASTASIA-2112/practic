@@ -13,12 +13,16 @@ function App() {
         {id: 4, title: "Redux", isDone: false},
 
     ]);
-    let [filter, setFilter] = useState<FilterValuesType>("Completed")
+    let [filter, setFilter] = useState<FilterValuesType>("All")
 
 
     function removeTask(id: number) {
         let filteredTasks = tasks.filter(t => t.id !== id)
         setTasks(filteredTasks);
+    }
+
+    function changeFilter(value:FilterValuesType) {
+        setFilter( value);
     }
 
     let taskForTodolist = tasks;
@@ -29,11 +33,13 @@ function App() {
         taskForTodolist = tasks.filter(t => t.isDone === false);
     }
 
+
     return (
         <div className="App">
             <Todolist title="What to learn"
                       tasks={taskForTodolist}
                       removeTask={removeTask}
+                      changeFilter={changeFilter}
             />
 
         </div>
